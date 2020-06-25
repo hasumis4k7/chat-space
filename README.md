@@ -40,8 +40,8 @@ Column|Type|Options|
 |text|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs :users
+- belongs_to :user
 - has_many :group
