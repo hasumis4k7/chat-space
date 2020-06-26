@@ -44,4 +44,4 @@ Column|Type|Options|
 
 ### Association
 - belongs_to :user
-- has_many :group
+- belongs_to :group
