@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .wrapper{
@@ -28,7 +29,7 @@
           width: 60px;
           display: flex;
           justify-content: flex-end;
-          text-decoration: none;
+          
          
           &__edit{
             color: #ffffff;
@@ -46,16 +47,20 @@
       height: calc(100vh - 100px);
       padding: 0 20px;
       background-color: #2f3e51;
-      color: #ffffff;
+     
       &__group-name{
-        
+        display: inline-block;
         &__top{
           font-size: 15px;
           padding-top: 20px;
+          color: white;
+          
         }
         &__bottom{
           font-size: 11px;
           margin-top: 5px;
+          color: white;
+         
         }
       }
     }
