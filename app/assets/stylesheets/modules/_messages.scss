@@ -72,14 +72,13 @@
     &__message-origin{
       height: 100px;
       border-bottom: 1px solid #eeeeee;
-      padding: 0px 40px 0px 0px;
+      padding: 35px 40px 0px 35px;
       display: flex;
       justify-content: space-between;
 
       &__group-name{
         font-size: 20px;
         color: #333333;
-        margin: 35px;
       }
 
         &__member-list{
@@ -90,7 +89,6 @@
       
       &__edit2{
         font-size: 16px;;
-        margin-top: 28px;
         border: 1px solid #38aef0;
         color: #38aef0;
         line-height: 40px;
@@ -105,6 +103,7 @@
       background-color: #fafafa;
       padding: 35px 40px;
       box-sizing: border-box;
+      overflow: scroll;
       &__box{
         margin-bottom: 46px;
         &__code{
@@ -132,9 +131,11 @@
       background-color: #d2d2d2;
       display: flex;
       justify-content: center;
+      box-sizing: border-box;
       padding: 10px 40px;
+
       &__text{
-        width: 100vw;
+        width: calc(100vw - 600px);
         height: 50px;
         border: 1px;
         background-color: #fff;
@@ -143,14 +144,20 @@
         line-height: 50px;
         padding-left: 10px;
         position: relative;
-      
+        
+        
+
         &__img{
           padding-right: 10px;
           line-height: 50px;
           font-size: 25px;
-          right: 75px;
+          right: 10px;
           position: absolute ;
           color: black;
+            .Hidden{
+              display:none;
+            }
+         
         }
       }
       &__send{
@@ -166,4 +173,9 @@
     }
   }
   
+}
+
+.Form{
+  display: flex;
+  align-items: center;
 }
