@@ -49,9 +49,7 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server "54.150.34.35",
-user: "ec2-user",
-roles: %w{app db web},
+
 #   ssh_options: {
 #     user: "user_name", # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
@@ -59,3 +57,4 @@ roles: %w{app db web},
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+server "54.150.34.35", user: "ec2-user", roles: %w{app db web}
