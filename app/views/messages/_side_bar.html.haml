@@ -2,7 +2,7 @@
   .side-bar__user-name
     .side-bar__user-name__input-box
       .side-bar__user-name__input-box__left
-        sample
+        = current_user.name
       .side-bar__user-name__input-box__right
         =link_to new_group_path , class: "side-bar__user-name__input-box__right__edit" do
           =  icon('far', 'edit')

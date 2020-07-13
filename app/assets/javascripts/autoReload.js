@@ -43,7 +43,7 @@ $(function(){
 
 
   let reloadMessages = function() {
-    let last_message_id = $('.MessageBox:last').data("message-id");
+    let last_message_id = $('.main-chat__message-list__box:last').data("message-id");
     $.ajax({
       url: "api/messages",  //同期通信でいう『パス』
       type: 'get',  //同期通信でいう『HTTPメソッド』
